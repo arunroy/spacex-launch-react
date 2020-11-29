@@ -2,4 +2,19 @@
     background-color: white;
     border-radius: 6px;
     padding: 1rem;
+    margin-top: 1rem;
+    margin-right: 2%;
+    margin-left: 2%;
+
+    @media screen and (max-width: 700px) {
+        flex: 0 100%;
+    }
+  
+    @media screen and (min-width: 701px) and (max-width : 1024px) {
+        flex: 0 50%;
+    }
+
+    @media screen and (min-width: 1025px) {
+        margin-right: 1rem;
+    }
 }

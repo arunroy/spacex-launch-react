@@ -10,11 +10,15 @@ export default function Home({ data }) {
         <title>{siteTitle}</title>
       </Head>
       <section>
-        <div>
-          <Filter/>
-          { data.map( (mission, key) => {
-            return <MissionTile id = { key } data = { mission } />
-          })}
+        <div className='app-container'> 
+          <div className='filter-container'>
+            <Filter/>
+          </div>
+          <div className='col-container'>
+            { data.map( (mission, key) => {
+              return <MissionTile id = { key } data = { mission } />
+            })}
+          </div>
         </div>
       </section>
       <section className="devCredits">

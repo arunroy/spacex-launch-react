@@ -3,19 +3,41 @@
     border-radius: 6px;
     margin-top: 1rem;
     padding: 1rem;
+ 
+    img {
+       margin: auto;
+    }
+    span {
+        color: black;
+        font-weight: bold;
+        display: block;
+    }
+    
+    .missionName {
+        color: #494F9A;
+        font-weight: bold;
+        max-width: 200px;
+    }
+
+    @media screen and (max-width: 700px) {
+        flex: 0 100%;
+    }
+    
+    @media screen and (min-width: 700px) {
+        &:first-child {
+            margin-left: 2%;
+        }
+    }
+  
+    @media screen and (min-width: 701px) and (max-width : 1024px) {
+        flex: 0 47%;
+    }
+
+    @media screen and (min-width: 1025px) {
+        flex: 0 23%;
+    }
 }
 
-.missionTile img {
-    margin: auto;
-}
-
-.missionTile span {
-    color: black;
-    font-weight: bold;
-    display: block;
-}
-
-.missionTile .missionName {
-    color: #494F9A;
-    font-weight: bold;
+.missionTile + .missionTile {
+    margin-left: 2%;
 }
