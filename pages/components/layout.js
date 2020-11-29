@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
-import Link from 'next/link'
+import styles from './layout.module.scss'
 
 const name = 'SpaceX Launch Programs'
 export const siteTitle = 'Next.js Sample Website'

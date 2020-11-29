@@ -8,15 +8,14 @@
 .missionTile img {
     margin: auto;
 }
-.missionName {
-    color: #00277B;
-    display: block;
-    font-size: medium;
-    font-weight: bold;
-}
 
 .missionTile span {
     color: black;
     font-weight: bold;
     display: block;
+}
+
+.missionTile .missionName {
+    color: #494F9A;
+    font-weight: bold;
 }

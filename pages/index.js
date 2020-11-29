@@ -10,11 +10,16 @@ export default function Home({ data }) {
         <title>{siteTitle}</title>
       </Head>
       <section>
-        <p>Below are the SpaceX</p>
-        <Filter/>
-        { data.map( (mission, key) => {
-          return <MissionTile id = { key } data = { mission } />
-        })}
+        <div>
+          <Filter/>
+          { data.map( (mission, key) => {
+            return <MissionTile id = { key } data = { mission } />
+          })}
+        </div>
+      </section>
+      <section className="devCredits">
+        <span>Developed by:</span>
+        <a href="https://www.linkedin.com/in/arunkarthic">Arun Roy</a>
       </section>
     </Layout>
   )
@@ -22,7 +27,7 @@ export default function Home({ data }) {
 
 export async function getServerSideProps() {
   //Fetch data from the API
-  const res = await fetch("https://api.spaceXdata.com/v3/launches?limit=5");
+  const res = await fetch("https://api.spaceXdata.com/v3/launches?limit=100");
   const data = await res.json();
 
   return { props: { data } };

@@ -1,5 +1,5 @@
 import Button from '../block/button'
-import styles from './filter.module.css';
+import styles from './filter.module.scss';
 
 export default function Filter() {
     const START_YEAR = 2006;
