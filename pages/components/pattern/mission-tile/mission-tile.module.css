@@ -1,0 +1,22 @@
+.missionTile {
+    background-color: white;
+    border-radius: 6px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.missionTile img {
+    margin: auto;
+}
+.missionName {
+    color: #00277B;
+    display: block;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.missionTile span {
+    color: black;
+    font-weight: bold;
+    display: block;
+}
