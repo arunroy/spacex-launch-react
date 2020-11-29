@@ -12,5 +12,6 @@ export default function MissionTile({ id, data }) {
         <span>{ `Launch Year : ${ data.launch_year }` }</span>
         <span>{ `Successful Launch : ${ data.launch_success }` }</span>
         <span>{ `Successful Landing : ${ data.launch_landing || '' }` }</span>
+        
     </div>
 }
