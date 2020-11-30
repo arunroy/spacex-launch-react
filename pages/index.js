@@ -47,6 +47,7 @@ export default function Home({ data }) {
                     onLandStatusFilter = {(status) => { setLandStatus(status) }}/>
           </div>
           <div className='col-container'>
+            { isLoading && <div className='loader'>Loading... </div> }
             { spaceXData && spaceXData.map( (mission, key) => {
               return <MissionTile id = { key } data = { mission } />
             })}
