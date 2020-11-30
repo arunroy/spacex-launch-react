@@ -1,4 +1,4 @@
-import Button from '../block/button'
+import Button from '../block/button';
 import styles from './filter.module.scss';
 
 export default function Filter({ onClickFilter, onLaunchStatusFilter, onLandStatusFilter }) {
@@ -17,7 +17,7 @@ export default function Filter({ onClickFilter, onLaunchStatusFilter, onLandStat
     }
 
     return <div className={ styles.dataFilter }>
-            <br></br>
+            <h3>Filters</h3>
             <span>Launch year</span>
             <br/>
             { Array.from({ length: 15}, (x, i) => i + START_YEAR).map( (title, index) => {

@@ -46,16 +46,11 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (min-width: 1441px) {
-    display: block;
-  }
-
   .filter-container {
     @media screen and (max-width: 1024px) {
       flex: 0 100%;
     }
-    @media screen and (min-width: 1024px) {
-      max-width: 250px;
+    @media screen and (min-width: 1025px) {
       flex: 0 20%;
     }
   }
@@ -66,12 +61,8 @@ img {
     @media screen and (max-width: 1024px) {
       flex: 0 100%;
     }
-    @media screen and (min-width: 1025px) and (max-width: 1440px){
+    @media screen and (min-width: 1025px){
       flex: 0 70%;
     }
-
-    @media screen and (min-width: 1441px) {
-      flex: 0 70%;
-    }
-  }
+ }
 }
